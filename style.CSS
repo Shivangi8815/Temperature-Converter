@@ -1,0 +1,79 @@
+/* Reset default margins and paddings */
+body, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the body */
+body {
+    background-color: #03202e;
+    color: #0f0e0e;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the container on the page */
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #50a3d0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the title and temperature icon */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.temperature-icon {
+    font-size: 48px;
+    color: #0c517f;
+}
+
+/* Style the temperature input fields and icons */
+div[id^="cel"], div[id^="fah"], div[id^="kel"] {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+div[id^="cel"] input, div[id^="fah"] input, div[id^="kel"] input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.icon {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #2b2929;
+}
+
+/* Style the 'All Clear' button */
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+.button button:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 5px cyan,
+    0 0 5px cyan, 0 0 5px cyan
+}
+.button button {
+    padding: 10px 20px;
+    background-color: #17496a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button button:hover {
+    background-color: #2e6088
+}
